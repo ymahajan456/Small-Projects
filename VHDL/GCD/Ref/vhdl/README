@@ -1,0 +1,25 @@
+Files in this directory
+
+    VHDL files for the multiplier
+    and its testbench.
+
+	ShiftAddMultiplier.vhdl
+
+	Testbench.vhdl
+		This testbench reads A,B, RESULT from
+                TRACEFILE.txt, applies it to the DUT,
+                and checks the result.
+
+	compile_ghdl.sh
+		run ./compile_ghdl.sh to compile.  This
+                produces an executable called testbench.
+
+		To run
+                ./testbench --stop-time=10000ns --wave=run.ghw
+                (this reports success/failure, and creates a waveform file)
+   
+	TRACEFILE.txt
+		A,B, RESULT I/Os
+
+
+

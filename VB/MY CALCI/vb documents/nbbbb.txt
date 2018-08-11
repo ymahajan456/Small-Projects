@@ -1,0 +1,50 @@
+Sub Main()
+Dim BinOne As String
+Dim BinTwo As String
+Dim BinThree As String
+ 
+    'Initialise Values
+    BinOne = "1101010101110101" '
+    BinTwo = "1100011011100010"
+    BinThree = ""
+    
+    'Add BinOne and BinTwo; store result in BinThree
+    BinThree = Dec2Bin(Bin2Dec(BinOne) + Bin2Dec(BinTwo))
+ 
+    'Show Result
+    MsgBox BinOne & " (" & Bin2Dec(BinOne) & ") + " & BinTwo & " (" & _
+        Bin2Dec(BinTwo) & ")" & vbCrLf & "= " & BinThree & " (" & Bin2Dec(BinThree) & ")"
+ 
+End Sub
+ 
+Private Function Bin2Dec(Bin As String) As Long
+Dim TempVal As Long
+Dim RevI As Long
+Dim I As Long
+ 
+    For I = Len(Bin) To 1 Step -1
+        RevI = (Len(Bin) - I) + 1
+        Debug.Print RevI
+        If Mid(Bin, I, 1) = "1" Then TempVal = TempVal + (2 ^ (RevI - 1))
+    Next I
+ 
+    Bin2Dec = TempVal
+ 
+End Function
+ 
+Private Function Dec2Bin(Dec As Long) As String
+Dim TempVal As String
+Dim I As Long
+ 
+    Do
+        I = I + 1
+        If Dec And (2 ^ (I - 1)) Then
+            TempVal = "1" & TempVal
+        Else
+            TempVal = "0" & TempVal
+        End If
+    Loop Until (2 ^ (I - 1)) > Dec
+ 
+    Dec2Bin = TempVal
+ 
+End Function

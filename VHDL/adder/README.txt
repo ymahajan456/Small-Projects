@@ -1,0 +1,3 @@
+We will be following Chapter 6 strictly for this lab. For those who are using personal PCs, please install PyUSB before coming to the Lab. The instructions are in the section 6.4.1 of the Lab Manual.
+
+The files to be used in the lab are provided. It is recommended that you have a look into it. However, "Krypton_files/Scan_Chain.vhd", "Krypton_files/Scan_Reg.vhd" and "HostPC_files/scan.py" are out of the purview of this lab.

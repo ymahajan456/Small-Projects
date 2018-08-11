@@ -1,0 +1,34 @@
+available event colors.
+colorId: 9 -- Blueberry
+  Background: #5484ed
+  Foreground: #1d1d1d
+colorId: 1   -- Peackock
+  Background: #a4bdfc
+  Foreground: #1d1d1d
+colorId: 6  -- Tangerine or 
+  Background: #ffb878
+  Foreground: #1d1d1d
+colorId: 8 -- Graphite
+  Background: #e1e1e1
+  Foreground: #1d1d1d
+colorId: 3 -- Lavender
+  Background: #dbadff
+  Foreground: #1d1d1d
+colorId: 5 -- Banana
+  Background: #fbd75b
+  Foreground: #1d1d1d
+colorId: 7 -- Blueberry
+  Background: #46d6db
+  Foreground: #1d1d1d
+colorId: 4 -- Flamingo
+  Background: #ff887c
+  Foreground: #1d1d1d
+colorId: 2 -- Sage
+  Background: #7ae7bf
+  Foreground: #1d1d1d
+colorId: 10 -- Basil
+  Background: #51b749
+  Foreground: #1d1d1d
+colorId: 11 -- Tomato
+  Background: #dc2127
+  Foreground: #1d1d1d

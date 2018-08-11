@@ -1,0 +1,5 @@
+Dim i As Integer = 255
+Dim intToBinary As String = Convert.ToString(i, 2)
+Dim intToHex as String = Convert.ToString(i, 16)
+Dim binaryToInt As Integer = Convert.ToInt32(intToBinary, 2)
+Dim hexToInt As Integer = Convert.ToInt32(intToHex, 16)

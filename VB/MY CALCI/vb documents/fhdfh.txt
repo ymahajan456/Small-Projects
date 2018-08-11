@@ -1,0 +1,15 @@
+Public Function BinaryToDecimal(ByRef Binary As String) As Integer
+        Dim BinaryNum As Integer
+        Dim BitCount As Short
+
+        For BitCount = 1 To Len(Binary)
+            BinaryNum = BinaryNum + (CDbl(Mid(Binary, Len(Binary) - BitCount + 1, 1)) * (2 ^ (BitCount - 1)))
+        Next BitCount
+        BinaryToDecimal = BinaryNum
+
+    End Function
+
+    Private Sub btnConvert_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConvert.Click
+        txtDecimalNum.Text = (BinaryToDecimal((txtBinaryNum.Text)))
+
+    End Sub

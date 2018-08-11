@@ -1,0 +1,63 @@
+# Title        : IITB Timetable Main
+# Developed by : Yogesh Mahajan (y.mahajan456@gmail.com)    (14D070022 @ IITB EE) 
+# Description  : 
+#--------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
+
+"""
+Time table Entry fomat:
+------------------------
+    "slot" : {"summary":"","location":"","description":"", "colorId" : ""},
+    
+ColorIDs for Events:
+---------------------
+    Id    Name     Hex
+    1 : Lavender  #a4bdfc
+    2 : Sage      #7ae7bf   
+    3 : Grape     #dbadff
+    4 : Flamingo  #ff887c
+    5 : Banana    #fbd75b
+    6 : Tangerine #ffb878
+    7 : Peacock   #46d6db
+    8 : Graphite  #e1e1e1
+    9 : Blueberry #5484ed
+    10: Basil     #51b749
+    11: Tomato    #dc2127
+"""
+#--------------------------------------------------------------------------------------------------
+from IITBtt_preprocessing import *
+
+#--------------------------------------------------------------------------------------------------
+time_table  = {
+    "slot_1" : {"summary":"EE 328 Digital Communication","location":"LC 002","description":"Abhay Karandikar"},
+    "slot_2" : {"summary":"EE 338 Digital Signal Processign","location":"LH 301","description":"V.M. Gadre"},
+    "slot_3" : {"summary":"EE 302 Control Systems","location":"LA 301","description":"Debasattam Pal"},
+    #"slot_4" : {"summary":"slot4","location":"l4","description":"test"},
+    "slot_5" : {"summary":"Cs 213 Data Structures and AAlgorithm","location":"CC 103","description":"G.Ramakrishnan","colorId" : "10"},
+    #"slot_6" : {"summary":"slot6","location":"l6","description":"test"},
+    #"slot_7" : {"summary":"slot7","location":"l7","description":"test"},
+    #"slot_8" : {"summary":"slot8","location":"l8","description":"test"},
+    #"slot_9" : {"summary":"slot9","location":"l9","description":"test"},
+    #"slot_10" : {"summary":"slot10","location":"l10","description":"test"},
+    #"slot_11" : {"summary":"slot11","location":"l11","description":"test"},
+    "slot_12" : {"summary":"EE 620 Physics of Transistors","location":"EEG 103","description":"Udayan Ganguli"},
+    #"slot_13" : {"summary":"slot13","location":"l13","description":"test"},
+    #"slot_14" : {"summary":"slot14","location":"l14","description":"test"},
+    #"slot_15" : {"summary":"slot15","location":"l15","description":"test"},
+    "slot_L1" : {"summary":"EE 324 Control Systems Lab","location":"WEL","description":"Debraj Chakraborty, M. Belur","colorId" : "8"},
+    "slot_L2" : {"summary":"EE 344 Electronic Design Lab","location":"WEL 2","description":"EDL","colorId" : "9"},
+    "slot_L3" : {"summary":"EE 352 Digital Signal Processing Lab","location":"WEL","description":"V Raj Babu"},
+    "slot_L4" : {"summary":"EE 344 Electronic Design Lab","location":"WEL 2","description":"EDL","colorId" : "9"},
+    #"slot_L5" : {"summary":"EE 324 Control Systems Lab","location":"lL1","description":"test"},
+    #"slot_L6" : {"summary":"EE 324 Control Systems Lab","location":"lL1","description":"test"},
+    #"slot_X1" : {"summary":"slotX1","location":"lL1","description":"test"},
+}
+#--------------------------------------------------------------------------------------------------
+start_date = "2017-01-02"
+end_date = "2017-04-14"
+calendar_name = "Semester VI"
+mid_sem_start = "2017-02-20"
+mid_sem_end = "2017-02-25"
+#--------------------------------------------------------------------------------------------------
+do_things(time_table,start_date, end_date, calendar_name, mid_sem_start, mid_sem_end)
+#--------------------------------------------------------------------------------------------------
